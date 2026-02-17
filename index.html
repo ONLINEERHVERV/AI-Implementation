@@ -388,6 +388,25 @@ body{font-family:var(--f);color:var(--g700);background:var(--w);-webkit-font-smo
     <a href="https://calendly.com/onlineerhverv/implementering" class="btn btn-b">Book introkald →</a>
   </div>
 </section>
+<script>
+  function sendHeight() {
+    const height = Math.max(
+      document.body.scrollHeight,
+      document.documentElement.scrollHeight
+    );
+
+    window.parent.postMessage(
+      { type: "setHeight", height: height },
+      "*"
+    );
+  }
+
+  window.addEventListener("load", sendHeight);
+  window.addEventListener("resize", sendHeight);
+
+  const observer = new ResizeObserver(sendHeight);
+  observer.observe(document.body);
+</script>
 
 <script>
 document.querySelectorAll('.faq-q').forEach(btn=>{
