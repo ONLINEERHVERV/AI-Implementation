@@ -19,22 +19,16 @@
 html{scroll-behavior:smooth}
 body{font-family:var(--f);color:var(--g700);background:var(--w);-webkit-font-smoothing:antialiased;line-height:1.6}
 .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
-
-/* Buttons */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 28px;border-radius:10px;font-family:var(--f);font-size:15px;font-weight:600;cursor:pointer;transition:all 0.2s;text-decoration:none;border:none;line-height:1.4}
 .btn-b{background:var(--blue);color:#fff;box-shadow:0 1px 3px rgba(37,99,235,0.3)}.btn-b:hover{background:var(--blue-h);transform:translateY(-1px);box-shadow:0 4px 16px rgba(37,99,235,0.25)}
 .btn-o{background:var(--w);color:var(--g700);border:1.5px solid var(--g200)}.btn-o:hover{border-color:var(--blue);color:var(--blue)}
 .btn-dark{background:var(--g900);color:#fff}.btn-dark:hover{background:var(--g800);transform:translateY(-1px)}
 .btn-full{width:100%}
-
-/* Section headers */
 .sh{text-align:center;margin-bottom:48px}
 .sh-tag{display:inline-block;padding:5px 14px;border-radius:8px;background:var(--b50);color:var(--blue);font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:16px}
 .sh h2{font-size:clamp(26px,3.5vw,38px);font-weight:800;color:var(--g900);letter-spacing:-0.025em;line-height:1.15;margin-bottom:12px}
 .sh h2 .bl{color:var(--blue)}
 .sh p{font-size:16px;color:var(--g500);max-width:520px;margin:0 auto;line-height:1.6}
-
-/* ═══ HERO ═══ */
 .hero{padding:96px 24px 80px;text-align:center;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% -10%,var(--b50),transparent 70%);pointer-events:none}
 .hero-in{position:relative;max-width:700px;margin:0 auto}
@@ -47,8 +41,6 @@ body{font-family:var(--f);color:var(--g700);background:var(--w);-webkit-font-smo
 .hero-check{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:500;color:var(--g700)}
 .hero-check svg{width:18px;height:18px;color:var(--blue)}
 .hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-
-/* ═══ THREE PILLARS ═══ */
 .pillars{padding:88px 24px;background:var(--g50);border-top:1px solid var(--g100)}
 .pillars-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1120px;margin:0 auto}
 .pillar{background:var(--w);border:1px solid var(--g200);border-radius:16px;padding:32px 26px;text-align:center;transition:all 0.25s}
@@ -56,16 +48,12 @@ body{font-family:var(--f);color:var(--g700);background:var(--w);-webkit-font-smo
 .pillar-icon{width:52px;height:52px;border-radius:14px;background:var(--b50);display:inline-flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:18px}
 .pillar h3{font-size:18px;font-weight:700;color:var(--g900);margin-bottom:8px}
 .pillar p{font-size:14px;color:var(--g500);line-height:1.65}
-
-/* ═══ WHO IS THIS FOR ═══ */
 .who{padding:88px 24px}
 .who-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:1120px;margin:0 auto}
 .who-card{display:flex;align-items:flex-start;gap:16px;padding:24px;background:var(--g50);border:1px solid var(--g200);border-radius:14px}
 .who-icon{width:40px;height:40px;border-radius:10px;background:var(--b50);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
 .who-card h4{font-size:15px;font-weight:700;color:var(--g900);margin-bottom:4px}
 .who-card p{font-size:13px;color:var(--g500);line-height:1.6}
-
-/* ═══ PROCESS ═══ */
 .process{padding:88px 24px;background:var(--g50);border-top:1px solid var(--g100)}
 .process-layout{display:grid;grid-template-columns:1fr 1fr;gap:48px;max-width:1120px;margin:0 auto;align-items:start}
 .steps{display:flex;flex-direction:column;gap:0}
@@ -74,7 +62,6 @@ body{font-family:var(--f);color:var(--g700);background:var(--w);-webkit-font-smo
 .step-num{flex-shrink:0;width:36px;height:36px;border-radius:10px;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800}
 .step h4{font-size:15px;font-weight:700;color:var(--g900);margin-bottom:2px}
 .step p{font-size:13px;color:var(--g500);line-height:1.5}
-
 .deliverables{background:var(--w);border:1px solid var(--g200);border-radius:20px;padding:36px;position:sticky;top:32px}
 .deliverables h3{font-size:20px;font-weight:800;color:var(--g900);margin-bottom:20px}
 .del-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
@@ -83,8 +70,6 @@ body{font-family:var(--f);color:var(--g700);background:var(--w);-webkit-font-smo
 .del-checks{display:flex;flex-direction:column;gap:8px}
 .del-check{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--g700);font-weight:500}
 .del-check .ck{width:20px;height:20px;border-radius:6px;background:var(--b50);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--blue);flex-shrink:0}
-
-/* ═══ PRICING ═══ */
 .pricing{padding:88px 24px}
 .price-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:900px;margin:0 auto}
 .price-card{border-radius:20px;padding:40px 32px;position:relative;overflow:hidden}
@@ -100,7 +85,6 @@ body{font-family:var(--f);color:var(--g700);background:var(--w);-webkit-font-smo
 .price-card.onsite .pc-feat{color:var(--g600)}
 .price-card.onsite .pc-feat .ck{background:var(--b50);color:var(--blue)}
 .price-card.onsite .pc-note{color:var(--g400)}
-
 .pc-tag{display:inline-block;padding:5px 12px;border-radius:8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:16px}
 .pc-title{font-size:24px;font-weight:800;margin-bottom:8px;letter-spacing:-0.02em}
 .pc-desc{font-size:14px;line-height:1.6;margin-bottom:24px}
@@ -109,14 +93,10 @@ body{font-family:var(--f);color:var(--g700);background:var(--w);-webkit-font-smo
 .pc-feat{display:flex;align-items:flex-start;gap:8px;font-size:13px;line-height:1.5}
 .pc-feat .ck{width:20px;height:20px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0;margin-top:1px}
 .pc-note{font-size:12px;margin-top:16px;line-height:1.5}
-
-/* ═══ BENEFITS BAR ═══ */
 .benefits-bar{padding:48px 24px;border-top:1px solid var(--g100);background:var(--g50)}
 .benefits-in{display:flex;justify-content:center;gap:clamp(24px,5vw,64px);flex-wrap:wrap;max-width:900px;margin:0 auto}
 .benefit-item{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--g700)}
 .benefit-item svg{width:18px;height:18px;color:var(--blue)}
-
-/* ═══ ADVISOR ═══ */
 .advisor{padding:88px 24px}
 .advisor-card{max-width:800px;margin:0 auto;display:grid;grid-template-columns:280px 1fr;gap:40px;align-items:center;background:var(--g50);border:1px solid var(--g200);border-radius:24px;padding:40px}
 .advisor-img{width:100%;aspect-ratio:3/4;background:var(--g200);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:80px;overflow:hidden}
@@ -126,8 +106,6 @@ body{font-family:var(--f);color:var(--g700);background:var(--w);-webkit-font-smo
 .advisor-info .ai-checks{display:flex;flex-direction:column;gap:6px;margin-bottom:24px}
 .advisor-info .ai-check{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--g700);font-weight:500}
 .advisor-info .ai-check span{color:var(--blue)}
-
-/* ═══ FAQ ═══ */
 .faq{padding:88px 24px;background:var(--g50);border-top:1px solid var(--g100)}
 .faq-list{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
 .faq-item{background:var(--w);border:1px solid var(--g200);border-radius:12px;overflow:hidden}
@@ -137,8 +115,6 @@ body{font-family:var(--f);color:var(--g700);background:var(--w);-webkit-font-smo
 .faq-a{padding:0 22px;max-height:0;overflow:hidden;transition:all 0.3s ease}
 .faq-item.open .faq-a{max-height:300px;padding:0 22px 18px}
 .faq-a p{font-size:14px;color:var(--g500);line-height:1.7}
-
-/* ═══ CTA ═══ */
 .cta{padding:88px 24px}
 .cta-box{max-width:720px;margin:0 auto;text-align:center;background:var(--g900);border-radius:24px;padding:64px 48px;color:#fff;position:relative;overflow:hidden}
 .cta-box::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at bottom,rgba(37,99,235,0.12),transparent 60%);pointer-events:none}
@@ -150,19 +126,25 @@ body{font-family:var(--f);color:var(--g700);background:var(--w);-webkit-font-smo
 @keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
 
 @media(max-width:900px){
-  .pillars-grid{grid-template-columns:1fr}
-  .who-grid{grid-template-columns:1fr}
-  .process-layout{grid-template-columns:1fr}
+  .pillars-grid{grid-template-columns:1fr;max-width:560px;margin:0 auto}
+  .who-grid{grid-template-columns:1fr;max-width:560px;margin:0 auto}
+  .process-layout{grid-template-columns:1fr;max-width:560px;margin:0 auto}
   .deliverables{position:static}
-  .price-grid{grid-template-columns:1fr}
-  .advisor-card{grid-template-columns:1fr;text-align:center}
+  .price-grid{grid-template-columns:1fr;max-width:560px;margin:0 auto}
+  .advisor-card{grid-template-columns:1fr;text-align:center;max-width:560px;margin:0 auto}
   .advisor-img{max-width:240px;margin:0 auto}
   .advisor-info .ai-checks{align-items:center}
+  .faq-list{max-width:560px}
+  .hero-btns{max-width:320px;margin:0 auto}
+  .hero-btns .btn{width:100%}
+  .hero-checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:420px;margin:0 auto 40px}
+  .hero-checks .hero-check{justify-content:center}
+  .hero-in{max-width:560px}
+  .pillars,.who,.process,.pricing,.advisor,.faq,.cta,.benefits-bar,.hero{padding-left:16px;padding-right:16px}
 }
 @media(max-width:640px){
-  .hero{padding:64px 20px 60px}
-  .hero-btns{flex-direction:column;align-items:center}
-  .hero-checks{flex-direction:column;align-items:center;gap:10px}
+  .hero{padding:64px 16px 60px}
+  .hero-in{max-width:560px}
   .benefits-in{flex-direction:column;align-items:center;gap:16px}
   .cta-box{padding:48px 28px}
 }
@@ -170,7 +152,6 @@ body{font-family:var(--f);color:var(--g700);background:var(--w);-webkit-font-smo
 </head>
 <body>
 
-<!-- ═══ HERO ═══ -->
 <section class="hero">
   <div class="hero-in">
     <div class="pill"><span class="dot"></span> For virksomheder <span class="dot"></span></div>
@@ -189,37 +170,19 @@ body{font-family:var(--f);color:var(--g700);background:var(--w);-webkit-font-smo
   </div>
 </section>
 
-<!-- ═══ THREE PILLARS ═══ -->
 <section class="pillars">
   <div class="wrap">
     <div class="pillars-grid">
-      <div class="pillar">
-        <div class="pillar-icon">🔍</div>
-        <h3>Afklaring & scope</h3>
-        <p>Vi kortlægger jeres vigtigste processer og vælger 5–10 use cases med størst effekt. I får en klar plan før vi bygger.</p>
-      </div>
-      <div class="pillar">
-        <div class="pillar-icon">⚙️</div>
-        <h3>Implementering i drift</h3>
-        <p>Vi bygger skabeloner, SOP'er og workflows, tester dem i jeres hverdag og retter til — så output bliver stabilt.</p>
-      </div>
-      <div class="pillar">
-        <div class="pillar-icon">📈</div>
-        <h3>Effekt I kan måle</h3>
-        <p>Vi måler på tid sparet, svartid, kvalitet og output/uge — så I ved hvad der virker, og hvad der skal justeres.</p>
-      </div>
+      <div class="pillar"><div class="pillar-icon">🔍</div><h3>Afklaring & scope</h3><p>Vi kortlægger jeres vigtigste processer og vælger 5–10 use cases med størst effekt. I får en klar plan før vi bygger.</p></div>
+      <div class="pillar"><div class="pillar-icon">⚙️</div><h3>Implementering i drift</h3><p>Vi bygger skabeloner, SOP'er og workflows, tester dem i jeres hverdag og retter til — så output bliver stabilt.</p></div>
+      <div class="pillar"><div class="pillar-icon">📈</div><h3>Effekt I kan måle</h3><p>Vi måler på tid sparet, svartid, kvalitet og output/uge — så I ved hvad der virker, og hvad der skal justeres.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ═══ WHO IS THIS FOR ═══ -->
 <section class="who">
   <div class="wrap">
-    <div class="sh">
-      <div class="sh-tag">Er det relevant for jer?</div>
-      <h2>Typiske virksomheder <span class="bl">vi hjælper</span></h2>
-      <p>AI-implementering giver mest værdi for virksomheder der bruger tid på gentagne opgaver</p>
-    </div>
+    <div class="sh"><div class="sh-tag">Er det relevant for jer?</div><h2>Typiske virksomheder <span class="bl">vi hjælper</span></h2><p>AI-implementering giver mest værdi for virksomheder der bruger tid på gentagne opgaver</p></div>
     <div class="who-grid">
       <div class="who-card"><div class="who-icon">📩</div><div><h4>I bruger timer på at besvare leads og kunder</h4><p>Standardiserede svar, tilbudstekster og opfølgninger der i dag skrives fra bunden hver gang.</p></div></div>
       <div class="who-card"><div class="who-icon">📝</div><div><h4>I skriver de samme dokumenter igen og igen</h4><p>Rapporter, mødenotater, tilbud og intern kommunikation der følger samme struktur.</p></div></div>
@@ -229,14 +192,9 @@ body{font-family:var(--f);color:var(--g700);background:var(--w);-webkit-font-smo
   </div>
 </section>
 
-<!-- ═══ PROCESS ═══ -->
 <section class="process" id="forloeb">
   <div class="wrap">
-    <div class="sh">
-      <div class="sh-tag">Forløbet</div>
-      <h2>Hvad får I <span class="bl">leveret?</span></h2>
-      <p>Et skræddersyet implementeringsforløb — ikke et kursus. I får et færdigt system der kan køre uge for uge.</p>
-    </div>
+    <div class="sh"><div class="sh-tag">Forløbet</div><h2>Hvad får I <span class="bl">leveret?</span></h2><p>Et skræddersyet implementeringsforløb — ikke et kursus. I får et færdigt system der kan køre uge for uge.</p></div>
     <div class="process-layout">
       <div class="steps">
         <div class="step"><div class="step-num">01</div><div><h4>Afklaring & scope</h4><p>Mål, prioriteter og de 5–10 use cases med størst effekt.</p></div></div>
@@ -251,12 +209,7 @@ body{font-family:var(--f);color:var(--g700);background:var(--w);-webkit-font-smo
       <div class="deliverables">
         <h3>I får leveret</h3>
         <div class="del-tags">
-          <span class="del-tag">AI-standard</span>
-          <span class="del-tag">Skabelonbibliotek</span>
-          <span class="del-tag">SOP'er</span>
-          <span class="del-tag">Workflows i drift</span>
-          <span class="del-tag">Team-træning</span>
-          <span class="del-tag">QA + iteration</span>
+          <span class="del-tag">AI-standard</span><span class="del-tag">Skabelonbibliotek</span><span class="del-tag">SOP'er</span><span class="del-tag">Workflows i drift</span><span class="del-tag">Team-træning</span><span class="del-tag">QA + iteration</span>
         </div>
         <p class="del-desc">En implementering fra start til slut: Vi afklarer scope og standarder, bygger skabeloner og workflows, og træner teamet — så AI bliver en fast del af jeres drift.</p>
         <div class="del-checks">
@@ -270,13 +223,9 @@ body{font-family:var(--f);color:var(--g700);background:var(--w);-webkit-font-smo
   </div>
 </section>
 
-<!-- ═══ PRICING ═══ -->
 <section class="pricing" id="priser">
   <div class="wrap">
-    <div class="sh">
-      <div class="sh-tag">To modeller</div>
-      <h2>Vælg den løsning <span class="bl">der passer jer</span></h2>
-    </div>
+    <div class="sh"><div class="sh-tag">To modeller</div><h2>Vælg den løsning <span class="bl">der passer jer</span></h2></div>
     <div class="price-grid">
       <div class="price-card remote">
         <div class="pc-tag">Remote</div>
@@ -321,7 +270,6 @@ body{font-family:var(--f);color:var(--g700);background:var(--w);-webkit-font-smo
   </div>
 </section>
 
-<!-- ═══ BENEFITS BAR ═══ -->
 <section class="benefits-bar">
   <div class="benefits-in">
     <div class="benefit-item"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Scope før start</div>
@@ -331,13 +279,9 @@ body{font-family:var(--f);color:var(--g700);background:var(--w);-webkit-font-smo
   </div>
 </section>
 
-<!-- ═══ ADVISOR ═══ -->
 <section class="advisor">
   <div class="wrap">
-    <div class="sh">
-      <div class="sh-tag">Mød jeres rådgiver</div>
-      <h2>AI-implementering med fokus på <span class="bl">drift og adoption</span></h2>
-    </div>
+    <div class="sh"><div class="sh-tag">Mød jeres rådgiver</div><h2>AI-implementering med fokus på <span class="bl">drift og adoption</span></h2></div>
     <div class="advisor-card">
       <div class="advisor-img"><img src="https://cdn.prod.website-files.com/66960fd6d176e460a6a3429f/6984d99380a50e60a844b899_WhatsApp%20Image%202026-02-05%20at%2010.54.38%20PM.webp" alt="Frederik Hoffmeyer" style="width:100%;height:100%;object-fit:cover;border-radius:16px"></div>
       <div class="advisor-info">
@@ -356,14 +300,9 @@ body{font-family:var(--f);color:var(--g700);background:var(--w);-webkit-font-smo
   </div>
 </section>
 
-<!-- ═══ FAQ ═══ -->
 <section class="faq">
   <div class="wrap">
-    <div class="sh">
-      <div class="sh-tag">FAQ</div>
-      <h2>Ofte stillede <span class="bl">spørgsmål</span></h2>
-      <p>Alt det I skal vide før vi går i gang</p>
-    </div>
+    <div class="sh"><div class="sh-tag">FAQ</div><h2>Ofte stillede <span class="bl">spørgsmål</span></h2><p>Alt det I skal vide før vi går i gang</p></div>
     <div class="faq-list">
       <div class="faq-item"><button class="faq-q">Hvad er forskellen på remote og on-site?<span class="arrow">▾</span></button><div class="faq-a"><p>Remote foregår online via videokald og delte dokumenter. On-site betyder vi kommer ud til jer fysisk og bygger det sammen med teamet. Begge modeller leverer det samme — forskellen er primært i samarbejdsformen og graden af forankring.</p></div></div>
       <div class="faq-item"><button class="faq-q">Hvor lang tid tager et typisk implementeringsforløb?<span class="arrow">▾</span></button><div class="faq-a"><p>Typisk 2–6 uger afhængigt af scope. Et fokuseret forløb med 5 use cases kan være klar på 2 uger. Større implementeringer med flere afdelinger tager 4–6 uger.</p></div></div>
@@ -379,7 +318,6 @@ body{font-family:var(--f);color:var(--g700);background:var(--w);-webkit-font-smo
   </div>
 </section>
 
-<!-- ═══ CTA ═══ -->
 <section class="cta">
   <div class="cta-box">
     <h2>Klar til at få AI ind i driften?</h2>
@@ -388,26 +326,23 @@ body{font-family:var(--f);color:var(--g700);background:var(--w);-webkit-font-smo
     <a href="https://calendly.com/onlineerhverv/implementering" class="btn btn-b">Book introkald →</a>
   </div>
 </section>
+
 <script>
   function sendHeight() {
     const height = Math.max(
       document.body.scrollHeight,
       document.documentElement.scrollHeight
     );
-
     window.parent.postMessage(
       { type: "setHeight", height: height },
       "*"
     );
   }
-
   window.addEventListener("load", sendHeight);
   window.addEventListener("resize", sendHeight);
-
   const observer = new ResizeObserver(sendHeight);
   observer.observe(document.body);
 </script>
-
 <script>
 document.querySelectorAll('.faq-q').forEach(btn=>{
   btn.addEventListener('click',()=>{
